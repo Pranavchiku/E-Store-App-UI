@@ -33,14 +33,21 @@ class _IndexState extends State<Index> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Icon(Icons.person),
-                  const SizedBox(width: 120),
+                  ClipRect(
+                    child: Image.asset(
+                      "assets/profile.png",
+                      height: 60,
+                      width: 60,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
                   Text(
-                    'E-Store',
-                    style: GoogleFonts.poppins(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
+                    "Welcome, User!",
+                    style: GoogleFonts.roboto(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ],
